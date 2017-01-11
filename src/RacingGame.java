@@ -65,79 +65,25 @@ public class RacingGame extends JFrame implements ActionListener{
 		g.fillRect(0, 70, fwidth, fheight);
 
 		g.setColor(Color.red);
-		g.fillOval(100, 160, 5, 5);
-		g.fillOval(130, 160, 5, 5);
-		g.fillOval(160, 160, 5, 5);
-		g.fillOval(190, 160, 5, 5);
-		g.fillOval(220, 160, 5, 5);
-		g.fillOval(250, 160, 5, 5);
-		g.fillOval(280, 160, 5, 5);
-		g.fillOval(310, 160, 5, 5);
-		g.fillOval(340, 160, 5, 5);
-		g.fillOval(370, 160, 5, 5);
-		g.fillOval(400, 160, 5, 5);
-		g.fillOval(430, 160, 5, 5);
-		g.fillOval(460, 160, 5, 5);
-		g.fillOval(490, 160, 5, 5);
-		g.fillOval(520, 160, 5, 5);
-		g.fillOval(550, 160, 5, 5);
-		g.fillOval(580, 160, 5, 5);
+		for(int i=100; i<600; i=i+30){
+            g.fillOval(i, 160, 5, 5);
+        }
 
 		g.setColor(Color.blue);
-		g.fillOval(100, 210, 5, 5);
-		g.fillOval(130, 210, 5, 5);
-		g.fillOval(160, 210, 5, 5);
-		g.fillOval(190, 210, 5, 5);
-		g.fillOval(220, 210, 5, 5);
-		g.fillOval(250, 210, 5, 5);
-		g.fillOval(280, 210, 5, 5);
-		g.fillOval(310, 210, 5, 5);
-		g.fillOval(340, 210, 5, 5);
-		g.fillOval(370, 210, 5, 5);
-		g.fillOval(400, 210, 5, 5);
-		g.fillOval(430, 210, 5, 5);
-		g.fillOval(460, 210, 5, 5);
-		g.fillOval(490, 210, 5, 5);
-		g.fillOval(520, 210, 5, 5);
-		g.fillOval(550, 210, 5, 5);
-		g.fillOval(580, 210, 5, 5);
-		
+        for(int i=100; i<600; i=i+30){
+            g.fillOval(i, 210, 5, 5);
+        }
 
-		g.setColor(Color.white);
-		g.fillRect(590, 145, 20, 4);
-		g.setColor(Color.black);
-		g.fillRect(590, 150, 20, 4);
-		g.setColor(Color.white);
-		g.fillRect(590, 155, 20, 4);
-		g.setColor(Color.black);
-		g.fillRect(590, 160, 20, 4);
-		g.setColor(Color.white);
-		g.fillRect(590, 165, 20, 4);
-		g.setColor(Color.black);
-		g.fillRect(590, 170, 20, 4);
-		g.setColor(Color.white);
-		g.fillRect(590, 175, 20, 4);
-		g.setColor(Color.black);
-		g.fillRect(590, 180, 20, 4);
-		g.setColor(Color.white);
-		g.fillRect(590, 185, 20, 4);
-		g.setColor(Color.black);
-		g.fillRect(590, 190, 20, 4);
-		g.setColor(Color.white);
-		g.fillRect(590, 195, 20, 4);
-		g.setColor(Color.black);
-		g.fillRect(590, 200, 20, 4);
-		g.setColor(Color.white);
-		g.fillRect(590, 205, 20, 4);
-		g.setColor(Color.black);
-		g.fillRect(590, 210, 20, 4);
-		g.setColor(Color.white);
-		g.fillRect(590, 215, 20, 4);
-		g.setColor(Color.black);
-		g.fillRect(590, 220, 20, 4);
-		g.setColor(Color.white);
-		g.fillRect(590, 225, 20, 4);
 		
+        for(int i=145; i<=225;){
+            g.setColor(Color.white);
+            g.fillRect(590, i, 20, 4);
+            g.setColor(Color.black);
+            i=i+5;
+            g.fillRect(590, i, 20, 4);
+            i=i+5;
+        }
+
 		
 		g.drawImage(objectA, objAX, 150, null);
 		g.drawImage(objectB, objBX, 200, null);
